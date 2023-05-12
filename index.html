@@ -1,0 +1,193 @@
+<html lang="en-gb" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DaRk &#10008 Checker</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hyper.css?v=10.9">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/uikit-1.js"></script>
+</head>
+
+<body>
+    <a class="uk-navbar-item uk-logo" href="https://t.me/DaRkxxChaT">&#10008 DaRk &#10008</a>
+    <div id="hyper_progress"></div>
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <div class="uk-background-default uk-border-rounded uk-box-shadow-small">
+                <div class="uk-container uk-container-xsmall uk-padding-large" style="margin-left: 15px;margin-right: 15px">
+                    <article class="uk-article">
+                        <center>
+                            <div class="hyper_logo"></div>
+                        </center>
+                        <div class="uk-article-content">
+                            <!-- <p class="uk-text-lead uk-text-muted">Warning: don't use generated ccs don't be noob!</p> -->
+                            <div class="uk-form-stacked uk-margin-medium-top">
+
+                                <div class="uk-margin-bottom">
+                                     <!---<span id="totalCount">430</span> --->
+                                    <div class="uk-form-label" for="message" style="user-select:none;text-transform:uppercase;"><span style="font-size: 15px;">Start
+                      <a class="tag_required" href = 'https://t.me/hitccsender_bot'>@Hitccsender_bot</a></span>
+                                        <span class="tag_total">Total <span id="totalCount">0</span></span>
+
+                                        <span class="tag_info">Checked <span id="totalChecked">0</span></span>
+                                    </div>
+                                    <div class="uk-form-controls" id="lista_con">
+                                        <textarea id="message" class="hyper_ccs uk-textarea uk-border-rounded" placeholder="XXXXXXXXXXXXXXXXXX|XX|XXXX|XXX" name="lista" rows="5" minlength="10" required=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="uk-margin-bottom" id="amount_container2">
+                                    <div class="uk-form-controls hyper_login">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row-col">
+                                <div class="uk-margin-bottom" id="amount_container">
+
+                                    <div class="uk-form-controls hyper_login" style="margin-top: 2px">
+
+                                        <div class="uk-form-controls hyper_login">
+                                            <input id="tg_id" class="hyper_input uk-input uk-border-rounded" style="-webkit-text-fill-color: #404040;" name="number" autocomplete="off" type="text" placeholder="Telegram ID" required="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-margin-bottom" id="amount_container">
+
+                                    <div class="uk-form-controls hyper_login" style="margin-top: 2px">
+
+                                        <div class="uk-form-controls hyper_login">
+                                            <input id="amount" class="hyper_input uk-input uk-border-rounded" style="-webkit-text-fill-color: #404040;" name="number" autocomplete="off" type="text" placeholder="AMOUNT" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="row-col">
+                                <div class="uk-margin-bottom" id="amount_container">
+
+                                    <div class="uk-form-controls hyper_login" style="margin-top: 2px">
+                                        <select name="fwtype" id="fwtype" style="user-select:none;color: #969696">
+                    	<option value="live">Forwarder</option>
+                      <option value="hits">Hits</option>
+                      <option value="cvv">Hits + CVV</option>
+                      <option value="live">Hits + CVV + CCN</option>
+                    </select>
+                                    </div>
+                                </div>
+
+                                <div class="uk-margin-bottom" id="amount_container">
+
+                                    <div class="uk-form-controls hyper_login" style="margin-top: 2px">
+                                        <select name="type" id="type" style="user-select:none;color: #969696">
+                    	<option value="cvv">CHARGE TYPE</option>
+                      <option value="ccn">CCN CHARGE</option>
+                      <option value="cvv">CVV CHARGE</option> 
+                    </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin-bottom" id="amount_container2">
+                                <div class="uk-form-controls hyper_login">
+                                    <select name="curr" id="curr" style="user-select:none;color: #969696">
+            	<option value="usd">CURRENCY</option>
+                      <option value="usd">USD</option>
+                      <option value="gbp">GBP</option>
+                      <option value="inr">INR</option>
+                      <option value="cad">CAD</option> 
+                      <option value="eur">EUR</option>
+                    </select>
+                                </div>
+                            </div>
+
+
+                <div class="uk-text-center">
+                  <button class="uk-button uk-button-primary uk-border-rounded" style="user-select:none;"  id="startbtn" type="submit">start check</button>
+                </div>
+              </div>
+
+                        <!-- hits  -->
+                        <div class="uk-card card_hits uk-card-category hyper_mt3 uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded uk-width-1-1">
+                            <h3 class="uk-card-title uk-margin-remove uk-text-primary green_title" style="user-select:none;">HITS - <span id="hitsCount" style="user-select:none;">0</span>
+
+                                <span id="showHits" style="user-select:none;">Show</span>
+                            </h3>
+                            <span id="hitList" style="width:100%;word-wrap: break-word">
+                	<div style="height:16px"></div>
+                </span>
+
+                        </div>
+
+                        <!-- cvv  -->
+                        <div class="uk-card card_cvv uk-card-category hyper_mt3 uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded uk-width-1-1">
+                            <!-- <a class="uk-position-cover" href="article.html"></a> -->
+                            <h3 class="uk-card-title uk-margin-remove uk-text-primary skyblue_title" style="user-select:none;">CVV - <span id="cvvCount" style="user-select:none;">0</span>
+
+                                <span id="showCvv" style="user-select:none;">Show</span>
+
+                            </h3>
+                            <span id="cvvList" style="width:100%;word-wrap: break-word">
+                	<div style="height:16px"></div>
+                </span>
+
+                        </div>
+
+                        <!-- ccn  -->
+                        <div class="uk-card ccn_card uk-card-category hyper_mt3 uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded uk-width-1-1">
+
+                            <h3 class="uk-card-title uk-margin-remove uk-text-primary warn_title" style="user-select:none;">CCN - <span id="ccnCount" style="user-select:none;">0</span>
+                                <span id="showCcn" style="user-select:none;">Show</span>
+
+                            </h3>
+                            <span id="ccnList" style="width:100%;word-wrap: break-word">
+                  <div style="height:16px"></div>
+                </span>
+
+
+                        </div>
+
+                        <!-- dead  -->
+                        <div class="uk-card dead_card uk-card-category hyper_mt3 uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded uk-width-1-1">
+
+                            <h3 class="uk-card-title uk-margin-remove uk-text-primary dead_title" style="user-select:none;">Dead - <span id="deadCount" style="user-select:none;">0</span>
+                                <span id="showDead" style="user-select:none;">Show</span>
+                            </h3>
+                            <div id="deadList" style="width:100%;word-wrap: break-word">
+                                <div style="height:16px"></div>
+                            </div>
+
+                        </div>
+
+            </div>
+                <center><div class="uk-margin-medium uk-text-small uk-link-muted">
+                    </div>
+                </div></center>
+                <center><div class="uk-margin-medium uk-text-small uk-link-muted">
+                    Edited by <a href="https://t.me/Op_s0ul">DaRksOl</a></div>
+                </div></center>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+<center>
+    </center>
+
+    <script>
+document.getElementById("sklive").value = localStorage.getItem('resk');
+</script>
+  <script src="js/awesomplete-1.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/hyper.js?v=1.2"></script>
+  <script src="js/hyper.notify.js?v=1.2"></script>
+  <script src="js/hyper.skbased.js?v=9.6"></script>
+
+</body>
+</html>
